@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
-import { pool } from '../db/connection';
-import { CreatePurchaseOrderSchema, PurchaseOrderSchema } from '../types/index';
+import { pool } from '../db/connection.js';
+import { CreatePurchaseOrderSchema, PurchaseOrderSchema } from '../types/index.js';
 
 const router = Router();
 

@@ -1,11 +1,11 @@
 import express from 'express';
 import cors from 'cors';
 import 'dotenv/config';
-import { testConnection, pool } from './db/connection';
-import { initializeDatabase } from './db/init';
-import purchaseOrderRoutes from './routes/purchaseOrders';
-import companyRoutes from './routes/company';
-import { errorHandler } from './middleware/errorHandler';
+import { testConnection, pool } from './db/connection.js';
+import { initializeDatabase } from './db/init.js';
+import purchaseOrderRoutes from './routes/purchaseOrders.js';
+import companyRoutes from './routes/company.js';
+import { errorHandler } from './middleware/errorHandler.js';
 
 const app = express();
 const PORT = process.env.PORT || 4000;

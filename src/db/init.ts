@@ -1,4 +1,4 @@
-import { pool } from './connection';
+import { pool } from './connection.js';
 
 const createTableSQL = `
   CREATE TABLE IF NOT EXISTS purchase_orders (
